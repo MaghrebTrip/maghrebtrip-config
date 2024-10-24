@@ -1,4 +1,4 @@
-server:
+service:
   port: 8082
 
 eureka:
@@ -9,4 +9,4 @@ db:
   username: postgres
   password: password
   driver: org.postgresql.Driver
-  dialect: org.hibernate.dialect.PostgreSQLDialect    
+  dialect: org.hibernate.dialect.PostgreSQLDialect

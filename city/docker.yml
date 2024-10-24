@@ -1,12 +1,12 @@
-server:
+service:
   port: 8082
 
 eureka:
-  url: http://eureka-server:8761/eureka
+  url: http://eureka-service:8761/eureka
 
 db:
   url: jdbc:postgresql://postgres:5432/city
   username: postgres
   password: password
   driver: org.postgresql.Driver
-  dialect: org.hibernate.dialect.PostgreSQLDialect    
+  dialect: org.hibernate.dialect.PostgreSQLDialect
