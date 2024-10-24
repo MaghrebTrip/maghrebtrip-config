@@ -2,7 +2,7 @@ service:
   port: ${services.auth.port}
 
 eureka-server:
-  url: http://${services.eureka.host}:${services.eureka.port}/eureka
+  url: http://${services.eureka.host}:${services.eureka-server.port}/eureka
 
 db:
   url: jdbc:postgresql://${db.host}:${db.port}/auth
