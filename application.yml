@@ -1,5 +1,5 @@
 microservices:
-  eureka:
+  eureka-server:
     port: 8761
   auth:
     port: 8080
