@@ -1,16 +1,12 @@
-spring:
-  datasource:
-    password: ${datasources.postgresql.password}
-    url: jdbc:postgresql://postgres:${datasources.postgresql.port}/city
-    username: ${datasources.postgresql.username}
-    driver-class-name: org.postgresql.Driver
-  jpa:
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
+server:
+  port: 8082
 
 eureka:
-  client:
-    service-url:
-      defaultZone: http://eureka-server:${microservices.eureka-server.port}/eureka
-      
+  url: http://eureka-server:8761/eureka
+
+db:
+  url: jdbc:postgresql://postgres:5432/city
+  username: postgres
+  password: password
+  driver: org.postgresql.Driver
+  dialect: org.hibernate.dialect.PostgreSQLDialect    
