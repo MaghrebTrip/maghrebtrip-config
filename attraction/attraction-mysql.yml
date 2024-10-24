@@ -1,11 +1,11 @@
 service:
-  port: ${services.trip.port}
+  port: ${services.attraction.port}
 
 eureka:
   url: http://${services.eureka.host}:${services.eureka.port}/eureka
 
 db:
-  url: jdbc:mysql://${db.host}:${db.port}/trip?sessionVariables=sql_mode='NO_ENGINE_SUBSTITUTION'&jdbcCompliantTruncation=false
+  url: jdbc:mysql://${db.host}:${db.port}/attraction?sessionVariables=sql_mode='NO_ENGINE_SUBSTITUTION'&jdbcCompliantTruncation=false
   username: ${db.username}
   password: ${db.password}
   driver: com.mysql.cj.jdbc.Driver

@@ -1,2 +1,2 @@
 service:
-  port: 8761
+  port: ${services.eureka-server.port}
