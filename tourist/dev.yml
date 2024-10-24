@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    password: ${datasources.postgresql.password}
+    url: jdbc:postgresql://localhost:${datasources.postgresql.port}/tourist
+    username: ${datasources.postgresql.username}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:${microservices.eureka-server.port}/eureka
