@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    password: ${datasources.mysql.password}
+    url: jdbc:mysql://localhost:${datasources.mysql.port}/auth?sessionVariables=sql_mode='NO_ENGINE_SUBSTITUTION'&jdbcCompliantTruncation=false
+    username: ${datasources.mysql.username}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:${microservices.eureka-server.port}/eureka
+      

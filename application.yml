@@ -19,5 +19,9 @@ microservices:
 datasources:
   postgresql:
     port: 5432
+    username: postgres
+    password: password
   mysql:
     port: 3306
+    username: mysqluser
+    password: mysqlpassword
