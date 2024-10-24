@@ -1,1 +1,17 @@
-message: Hello, World!
+microservices:
+  eureka:
+    port: 8761
+  auth:
+    port: 8080
+  tourist:
+    port: 8081
+  city:
+    port: 8082
+  plan:
+    port: 8083
+  attraction:
+    port: 8084
+  feedback:
+    port: 8085
+  trip:
+    port: 8086
