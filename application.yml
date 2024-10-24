@@ -1,34 +1,33 @@
 services:
-    auth:
-        port: 8080
-        host: localhost
-    tourist:
-        port: 8081
-        host: localhost
-    city:
-        port: 8082
-        host: localhost
-    trip:
-        port: 8083
-        host: localhost
-    plan:
-        port: 8084
-        host: localhost
-    feedback:
-        port: 8085
-        host: localhost
-    attraction:
-        port: 8084
-        host: localhost
-    eureka:
-        port: 8761
-        host: localhost
+  auth:
+    port: 8080
+    host: localhost
+  tourist:
+    port: 8081
+    host: localhost
+  city:
+    port: 8082
+    host: localhost
+  trip:
+    port: 8083
+    host: localhost
+  plan:
+    port: 8084
+    host: localhost
+  feedback:
+    port: 8085
+    host: localhost
+  attraction:
+    port: 8084
+    host: localhost
+  eureka-server:
+    port: 8761
+    host: localhost
 
 db:
-    port: 5432
-    host: localhost
-    username: postgres
-    password: password
-    driver: org.postgresql.Driver
-    dialect: org.hibernate.dialect.PostgreSQLDialect
-
+  port: 5432
+  host: localhost
+  username: postgres
+  password: password
+  driver: org.postgresql.Driver
+  dialect: org.hibernate.dialect.PostgreSQLDialect

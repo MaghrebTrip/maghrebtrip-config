@@ -1,7 +1,7 @@
 service:
   port: ${services.attraction.port}
 
-eureka:
+eureka-server:
   url: http://${services.eureka.host}:${services.eureka.port}/eureka
 
 db:
