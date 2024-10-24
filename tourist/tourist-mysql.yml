@@ -2,7 +2,7 @@ service:
   port: ${services.tourist.port}
 
 eureka-server:
-  url: http://${services.eureka.host}:${services.eureka-server.port}/eureka
+  url: http://${services.eureka-server.host}:${services.eureka-server.port}/eureka
 
 db:
   url: jdbc:mysql://${db.host}:${db.port}/tourist?sessionVariables=sql_mode='NO_ENGINE_SUBSTITUTION'&jdbcCompliantTruncation=false
