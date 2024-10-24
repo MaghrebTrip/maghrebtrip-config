@@ -29,3 +29,6 @@ db:
     host: localhost
     username: postgres
     password: password
+    driver: org.postgresql.Driver
+    dialect: org.hibernate.dialect.PostgreSQLDialect
+
