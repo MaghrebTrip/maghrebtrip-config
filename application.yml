@@ -15,3 +15,9 @@ microservices:
     port: 8085
   trip:
     port: 8086
+
+datasources:
+  postgresql:
+    port: 5432
+  mysql:
+    port: 3306
